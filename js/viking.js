@@ -33,7 +33,7 @@ function slideDisplayer(){
     document.querySelector( ".slide2").style.display="none";
     document.querySelector( ".slide3").style.display="none";
     document.querySelector( ".slide4").style.display="none";
-    document.getElementById("mainSlideTablet").src="images/viking_axe.jpg";
+    document.getElementById("mainSlideTablet").src="images/GameSS.PNG";
     document.querySelector("#cardImg1").src="images/viking_gods.png";
     document.querySelector("#cardImg2").src="images/viking_axe.jpg";
     document.querySelector("#cardImg3").src="images/viking_boat.jpg";
@@ -47,7 +47,7 @@ function slideDisplayer(){
     document.querySelector( ".slide1").style.display="none";
     document.querySelector( ".slide3").style.display="none";
     document.querySelector( ".slide4").style.display="none";
-    document.getElementById("mainSlideTablet").src="images/viking_boat.jpg";
+    document.getElementById("mainSlideTablet").src="images/GameSS2.PNG";
     document.querySelector("#cardImg1").src="images/viking_axe.jpg";
     document.querySelector("#cardImg2").src="images/viking_boat.jpg";
     document.querySelector("#cardImg3").src="images/viking_girl.png";
@@ -60,7 +60,7 @@ function slideDisplayer(){
     document.querySelector( ".slide1").style.display="none";
     document.querySelector( ".slide2").style.display="none";
     document.querySelector( ".slide4").style.display="none";
-    document.getElementById("mainSlideTablet").src="images/viking_girl.png";
+    document.getElementById("mainSlideTablet").src="images/IntroSS.PNG";
     document.querySelector("#cardImg1").src="images/viking_boat.jpg";
     document.querySelector("#cardImg2").src="images/viking_girl.png";
     document.querySelector("#cardImg3").src="images/viking_gods.png";
@@ -73,7 +73,7 @@ function slideDisplayer(){
     document.querySelector( ".slide1").style.display="none";
     document.querySelector( ".slide2").style.display="none";
     document.querySelector( ".slide3").style.display="none";
-    document.getElementById("mainSlideTablet").src="images/viking_gods.png";
+    document.getElementById("mainSlideTablet").src="images/IntroSS.PNG";
     document.querySelector("#cardImg1").src="images/viking_girl.png";
     document.querySelector("#cardImg2").src="images/viking_gods.png";
     document.querySelector("#cardImg3").src="images/viking_axe.jpg";
