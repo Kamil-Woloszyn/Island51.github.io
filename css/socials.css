@@ -1,0 +1,46 @@
+.socials{
+    display:block;
+}
+
+
+@media (min-width:600px){
+    .socials{
+        display:grid;
+        grid-template-columns: auto auto auto auto auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    #instagram{
+        grid-column: 1/2;
+        border-radius: 30%;
+        padding:1em;
+        border:1px solid black;
+        margin-right: 1em;
+    }
+    #youtube{
+        grid-column: 3/4;
+        border-radius: 30%;
+        padding:1em;
+        border:1px solid black;
+        margin-right: 1em;
+    }
+    #facebook{
+        grid-column: 5/-1;
+        border-radius: 30%;
+        padding:1em;
+        border:1px solid black;
+    }
+    .socials img{
+        max-width: 40%;
+        max-height: 40%;
+        padding:1em;
+    }
+    button{
+        padding:1em;
+        opacity: 70%;
+        border-radius: 30%;
+    }
+    button:hover{
+        opacity: 90%;
+    }
+}

@@ -1,0 +1,16 @@
+/*
+    SOURCES CSS FILE
+*/
+tr,td,table{
+    border:2px solid black;
+}
+.sources{
+    padding:1em;
+    background-color: #EDEDED;
+}
+footer{
+    
+    display: block;   
+    text-align: center;  
+
+}

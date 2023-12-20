@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VikingPedia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/viking.css" rel="stylesheet">
+    <script src="js/viking.js">
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <nav id="burgermenu">
+            <a href="index.html" class="active"><img id="logo" src="images/logo.png" alt="logo"></a>
+            <a href="javascript:void(0);" class="icon" onclick="burgerMenu();">
+                <i class="fa fa-bars"></i>
+              </a>
+            <div id="navLinks">
+                <ul >
+                    <li><a id="home" style="color:red;" href="index.html">Home</a></li>
+                    <li><a id="gal" href="gallery.html">Gallery</a></li>
+                    <li><a id="sources" href="sources.html">Sources</a></li>
+                    <li><a id="events" href="events.html">Events</a></li>
+                    <li><a id="soc" href="socials.html">Socials</a></li>
+                    <li><a id="show" href="shows.html">Shows</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+		<!--- PREVIEW SLIDES FOR TABLET VIEW AND DESKTOP VIEW --->
+			<div id="previewSlides">
+                <div class="card1" onclick="prevSlide();">
+                    <img src="images/viking_gods.png" alt="prevSlide" id="cardImg1">
+                    <div class="card1Content">
+                        <h4 id="c1h4">Norse Gods</h4>
+                        <p>Previous Slide</p>
+                    </div>
+                </div>
+                <div class="emptySpace1"><p></p></div>
+                <div class="card2">
+                    <img src="images/viking_axe.jpg" alt="CurrentSlide" id="cardImg2">
+                    <div class="card2Content">
+                        <h4 id="c2h4">Viking Axes</h4>
+                        <p>Current Slide</p>
+                    </div>
+                </div>
+                <div class="emptySpace2"><p></p></div>
+                <div class="card3" onclick="nextSlide();">
+                    <img src="images/viking_boat.jpg" alt="NextSlide" id="cardImg3">
+                    <div class="card3Content">
+                        <h4 id="c3h4">Viking Boats</h4>
+                        <p>Next Slide</p>
+                    </div>
+                </div>
+			</div>
+            <div class="desktopSlides">
+                <div class="img">
+                    <img src="images/viking_axe.jpg" alt="main Slides" id="mainSlideTablet">
+                </div>
+                <div class="p">
+                    <div class="slide1">
+                        <h1>Viking Axes</h1>
+                        <p>The Axe was the main weapon used by the vikings in the 8th century. The vikings would prefer this weapon as they could use the axes in both hands but this was not common as they would wield a shield in the other hand as a big strategy deployed by the vikings was a "Shield Wall".</p>
+                        <p>A shield wall consisted of shields at the front holding back enemy soldiers whilst in the back there were spear men ready to stab anyone who came close.</p>
+                        <p>Overtime the use of axes by the vikings started to wither as better and stronger swords were availble for them from trading but it remains as a staple of the viking culture to this day.</p>
+                    </div>
+                    <div class="slide2">
+                        <h1>Viking Boats</h1>
+                        <p> The Boats used by vikings in the 8th Century were nothing like what we have today no mechanical parts, no sails and definelty no eletric parts. Instead the boats were functioning on man power alone.</p>
+                        <p>In the centre of the boat men with oars were sitting on the sides of the boat as there were spots to sit down in these boats. A captain would be appointed to steer the boats from the back as there was a rudder there that they could control this was mainly used on open seas as when close to land it was better to use alternated paddling with Oars for faster turning.</p>
+                        <p>Boat journeys were tireing to say the least but with time and new technologies vikings soon implemented sails into their ships this allowed them to travel longer distances.</p>
+                    </div>
+                    <div class="slide3">
+                        <h1>Viking Attire</h1>
+                        <p>When you think of vikings you're probably thinking of helmets with horns on them as they were sometimes portreyed like that by monks and artists after the viking era. In reality what they wore is very different.</p>
+                        <p>Starting off with their heads vikings mostly wore helmets to battle with few exceptions like the Jarls which were bascially the cheiftains and the kings. Then at the torso they usually wore leather tunics and/or fur coats but they wore armour to battle. Lastly the legs, vikings wore cloth trousers with a belt tied to their waist. Their boots were made from leather.</p>
+                        <p>The clothing vikings wore was mainly for warmth as Sweden was and is a pretty cold country.</p>
+                    </div>
+                    <div class="slide4">
+                        <h1>Norse Gods</h1>
+                        <p>There are a lot of Norse gods but the main ones that people know of today are: Odin, Frigg, Balder, Loki, Thor, Freya, Heimdall, Hel.</p>
+                        <p>Odin is the supreme deity also known as the Allfather created mankind.</p>
+                        <p>Frigg is Odins wife she was known as a paragon of beauty, love and fertility.</p>
+                        <p>Balder son of Odin and Frigg was believed to be kind and fair, he was believed to be immortal because of a curse placed on him but was eventually killed by a mistletoe.</p>
+                        <p>Loki was a mischievous god responcible for the death of Balder by tricking a blind god to throw a branch of a mistletoe at Balder.</p>
+                        <p>Thor the most well known son of Odin the protector of humanity and most powerful God know to wield a hammer and slaying Jörmungandr (the World serpant).</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+			<div id="infoSlides">
+				<img src="images/mobileslide1.png" id="mainSlide" onclick="mobileSlideChange();">   <!-- SLIDE 3 USES THIS IMAGE FROM UNSPLASHED: https://unsplash.com/photos/mm1yH-RaU2s -->
+                <p>To Change Slide Click on the Contects</p><br>
+			</div>
+			<div id="slideSelector">
+				<p>
+                    <a href="#" onclick="slideButton(1);" class="slideSelectorButton">Slide 1</a> | 
+                    <a href="#" onclick="slideButton(2);" class="slideSelectorButton">Slide 2</a> | 
+                    <a href="#" onclick="slideButton(3);" class="slideSelectorButton">Slide 3</a> | 
+                    <a href="#" onclick="slideButton(4);" class="slideSelectorButton">Slide 4</a> 
+                </p>
+			</div>
+        <div class="contact">
+            <p>To join our NewsLetter click on the button below!!</p><br>
+            <a href="javascript:window.open('newsLetter.html','News Letter','width=600,height=400');" id="btnNews">News Letter</a><br><br><br>
+            <img src="images/logo.png" alt="logo" id="contactLogo">
+            <p id="telephone">☎️ +1 437 886 2947</p>
+            <p id="email">📧 thepedia@gmail.com</p>
+        </div>
+        <footer>
+            <p>Copy Right 2022</p>
+        </footer>
+    </div>
+</body>
+</html>

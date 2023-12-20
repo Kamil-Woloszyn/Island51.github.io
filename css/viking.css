@@ -1,0 +1,277 @@
+.container{
+    margin: auto;
+    text-align: center;
+    max-width: 90%;
+}
+nav{
+    background-color:black;
+}
+
+li #home:hover,li #gal:hover,li #sources:hover,li #events:hover,li #soc:hover, li #show:hover{
+    color:green;
+    text-decoration: underline;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+    grid-column: 2/-1;
+}
+#infoSlides{
+    background-color: #EDEDED;
+    grid-column: 1/-1;
+}
+#instagram{
+    background-color: #4CD7F5;
+}
+#youtube{
+    background-color: #171717;
+    color:white;
+}
+#facebook{
+    background-color: #4CD7F5;
+}
+section a{
+    text-decoration: none;
+    border-radius: 1em;
+    padding:0.6em;
+    background-color: white;
+    margin: 10px;
+}
+section #Follow{
+    background-color: #6865FF;
+    color:white;
+    font-weight: bold;
+}
+section #Subscribe{
+    background-color: rgb(255, 0, 0);
+    color:white;
+    font-weight: bold;
+
+}
+section #AddFriend{
+    background-color: #6865FF;
+    color:white;
+    font-weight: bold;
+}
+button{
+    border-radius: 10px;
+    padding:0.3em;
+}
+section img{
+    max-width: 10%;
+}
+.contact{
+    grid-column: 1/-1;
+    background-color: #171717;
+    color:white;
+}
+form{
+    text-align: left;
+    padding: 1em;
+}
+footer{
+    background-color: black;
+    color:white;
+    grid-column: 1/-1;
+}
+img #logo{
+    grid-column:1/2;
+}
+.socials{
+    grid-column: 1/-1;
+}
+nav #logo{
+    float:left;
+}
+nav .icon{
+   font-size:6em;
+   display:block;
+   text-align: right;
+   padding-right:0.5em;
+}
+nav img{
+    max-height:6em ;
+}
+section{
+    padding:1em;
+}
+.contact{
+    padding:1em;
+}
+footer{
+    padding:1em;
+}
+.img, .p{
+    display:none;
+}
+#navLinks{
+    display: none;
+    padding-bottom: 1em;
+}
+#slideSelector{
+    display: none;
+}
+#previewSlides{
+    display:none;
+}
+ul li{
+    padding:4px;
+    font-size:1.2em;
+}
+#btnNews{
+    border:1px solid #acaf9c;
+    background-color: #acaf9c;
+    padding:1em;
+    border-radius: 1em;
+    text-decoration: none;
+    color:#B58D3D;
+    margin-top: 10em;
+    font-weight: bolder;
+    opacity: 70%;
+}
+#btnNews:hover{
+
+    box-shadow:0 0 10px #9385fb;
+    opacity: 100%;
+
+}
+
+
+/* Tablet View */
+
+@media(min-width:600px)
+{
+    .container{
+        grid-template-columns: auto auto auto auto;
+    }
+    #previewSlides{
+        background-color: #EDEDED;
+    }
+
+    #infoSlides{
+        display:none;
+    }
+    .img, .p{
+        display:block;
+    }
+    #mainSlideTablet{
+        max-width:80%;
+        display:block;
+        text-align: left;
+        padding:2em;
+    }
+    
+    .desktopSlides{
+        display:grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .img{
+        grid-column: 1/3;
+        background-color: #171717;
+    }
+    .p{
+        grid-column: 3/-1;
+        background-color: #171717;
+        color:white;
+    }
+    .img img{
+        border-radius: 20%;
+    }
+    #slideSelector{
+        background-color:#EDEDED;
+        display:block;  
+        color:black;
+        grid-column: 1/-1;
+        padding:1em;
+    }
+    #slideSelector img{
+        padding-left: 6px;
+        padding-right:6px;
+        max-width: 20%;
+        max-height: 50px;
+    }
+    .p p{
+        padding-right:30px;
+        padding-left:30px;
+    } 
+    #slideSelector span{
+        margin:auto;
+        border-radius: 1px;
+        padding:3px;
+        display:inline;
+        text-decoration: solid;
+        background-color:#171717;
+        border-radius: 100%;
+        padding-top: 3px;
+    }
+    .slide2,.slide3,.slide4{
+        display:none;
+    }
+    #previewSlides{
+        display:grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding:2em;
+    }
+    .card1{
+        grid-column: 1/2;
+        background-color: #425061;
+        color:white;
+        padding:2em;
+        border-radius: 20%;
+        border:1px solid black;
+    }
+    .card2{
+        grid-column: 3/4;
+        background-color:#c6ddf2 ;
+        padding:1em;
+        border:1px solid black;
+        border-radius: 20%;
+    }
+    .card3{
+        grid-column: 5/-1;
+        padding:1em;
+        background-color: #425061;
+        color:white;
+        border-radius: 20%;
+        border:1px solid black;
+    }
+    #cardImg1,#cardImg2,#cardImg3{
+        width: 50%;
+        height: 50%;
+        border-radius: 30%;
+    }
+    .card1 p,.card2 p,.card3 p{
+        font-style: oblique;
+    }
+    .slideSelectorButton{
+        text-decoration: none;
+        color:red ;
+        font-weight: bolder;
+    }
+    
+}
+
+/*Desktop View */
+@media(min-width:900px){
+    #navLinks{
+        display:block;
+    }
+    i{
+        display: none;
+    }
+    #navLinks{
+        display: block;
+        padding:2em;  
+        text-align: right;  
+    }
+    #navLinks ul li{
+        display:inline;
+        padding:1.2em;
+        font-size: 1.1em;
+    }
+    .fa{
+        display:none;
+    }
+    
+}
